@@ -1,9 +1,9 @@
 class Animal {
-  constructor(nombre, edad, img, comentarios, sonido) {
+  constructor(nombre, img, sonido) {
     this._nombre = nombre;
-    this._edad = edad;
+    this._edad = "";
     this._img = img;
-    this._comentarios = comentarios;
+    this._comentarios = "";
     this._sonido = sonido;
   }
   getNombre() {
@@ -24,36 +24,46 @@ class Animal {
 }
 
 export class Leon extends Animal {
-  constructor(nombre, edad, img, comentarios, sonido) {
-    super(nombre, edad, img, comentarios, sonido);
+  constructor(nombre, img, sonido) {
+    super(nombre, img, sonido);
   }
-  rugir() {}
+  rugir() {
+    return this._sonido;
+  }
 }
 
-class Lobo extends Animal {
-  constructor(nombre, edad, img, comentarios, sonido) {
-    super(nombre, edad, img, comentarios, sonido);
+export class Lobo extends Animal {
+  constructor(nombre, img, sonido) {
+    super(nombre, img, sonido);
   }
-  aullar() {}
+  aullar() {
+    return this._sonido;
+  }
 }
 
-class Oso extends Animal {
-  constructor(nombre, edad, img, comentarios, sonido) {
-    super(nombre, edad, img, comentarios, sonido);
+export class Oso extends Animal {
+  constructor(nombre, img, sonido) {
+    super(nombre, img, sonido);
   }
-  gruñir() {}
+  gruñir() {
+    return this._sonido;
+  }
 }
 
-class Serpiente extends Animal {
-  constructor(nombre, edad, img, comentarios, sonido) {
-    super(nombre, edad, img, comentarios, sonido);
+export class Serpiente extends Animal {
+  constructor(nombre, img, sonido) {
+    super(nombre, img, sonido);
   }
-  Sisear() {}
+  sisear() {
+    return this._sonido;
+  }
 }
 
-class Aguila extends Animal {
-  constructor(nombre, edad, img, comentarios, sonido) {
-    super(nombre, edad, img, comentarios, sonido);
+export class Aguila extends Animal {
+  constructor(nombre, img, sonido) {
+    super(nombre, img, sonido);
   }
-  chillar() {}
+  chillar() {
+    return this._sonido;
+  }
 }
