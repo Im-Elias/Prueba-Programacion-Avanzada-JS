@@ -26,12 +26,11 @@ let animales = [];
           break;
       }
     });
-    console.log(animales);
   } catch (error) {
     console.log(error);
   }
 })();
-console.log(typeof document.getElementById("animal").value);
+
 //Cambia imagen en el formulario dinamicamente
 document.getElementById("animal").addEventListener("change", () => {
   let seleccion = document.getElementById("animal").value;
